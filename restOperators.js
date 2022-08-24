@@ -1,4 +1,5 @@
 //Rest operator are super usefull when you have multiple arrguments in you functions.
+// rest operatores are always placed in the last of every function parameter.
 
 const std = (name,course,...marks) => {
 let std = 0;
