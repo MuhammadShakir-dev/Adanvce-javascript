@@ -10,3 +10,14 @@ document.write(`${name} of ${course} taken total marks : ${std}`);
 
 std("Muhammad Shakir","Software Eng",90,88,76,90,90,90);
 std("Anum Mustafa","Software Eng",90,88,76,90,80,80);
+
+
+// anotehr example.
+
+let gdsc = (lead,colead,...rest) => {
+    document.write(`${lead} : GDSC Lead`);
+    document.write(`${colead} : GDSC colead`);
+    document.write(`GDSC Team : ${rest} `);
+}
+
+gdsc("Wajid","Shakir","Auum","Shiza","Ayesha")
