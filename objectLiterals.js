@@ -53,7 +53,27 @@ let stdDetails = {
 document.write(stdDetails);
 document.write(stdDetails.message());
 
+// lets take an other exapmle of a newer syntax of creating functions inside of object in ES6.
+// first let's take an example of an older versin.
 
+let stdName = {
+name : "Muhammad Shakir",
+show : function(){
+console.log(this.name);
+}
+}
+
+console.log(stdName.show());
+
+
+// now let do it with a newer version.
+let stdName = {
+    name : "Muhammad Shakir",
+    show(){
+        return this.name;
+    }
+};
+console.log(stdName.show());
 
 
 
