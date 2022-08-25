@@ -27,3 +27,65 @@ let stdDetials = {
 }
 //output.
 {stdName: 'Muhammad Shakir', stdDesg: 'Co Lead', stdComm: 'Google developer Student Clubs'}
+
+// Use variable as a property name.
+let n = "student";
+let stdDetails = {
+    [n + "Name"] : "Muhammad Shakir",
+    [n + "Dept"] : "BS-SE",
+    [n + "Semester"] : 5,
+    [n + "Location"] : "Karachi, Pakistan"
+};
+//output.
+{studentName: 'Muhammad Shakir', studentDept: 'BS-SE', studentSemester: 5, studentLocation: 'Karachi, Pakistan'}
+
+//let's take anotehr example by creating a function inside of an object.
+let n = "student";
+let stdDetails = {
+    [n + "Name"] : "Muhammad Shakir",
+    [n + "Dept"] : "BS-SE",
+    [n + "Semester"] : 5,
+    [n + "Location"] : "Karachi, Pakistan",
+    message : function(){
+        return `${this.studentName} is a Student of ${this.studentDept} and currently studying in ${this.studentSemester} semester and he lives in ${this.studentLocation}`
+    }
+};
+document.write(stdDetails);
+document.write(stdDetails.message());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
