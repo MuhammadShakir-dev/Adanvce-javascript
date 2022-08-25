@@ -27,3 +27,22 @@ sum("Anum Mustafa",...arr1);
 let arr = [10,20,30,40];
 document.write(...arr)
 
+//exapmle no 3 
+// example no 1 
+let arr = [10,20,30,40];
+let arr2 = arr
+arr2.push(50);
+document.write(arr);
+document.write(...arr2);
+
+//example no 4
+// old method of doing concatination
+let arr1 = [10,20,30,40];
+let arr2 = [50,60,70];
+let arr3 = arr1.concat(arr2);
+
+//exapmle no 5
+//using spread operators.
+let arr1 = [10,20,30,40,50];
+let arr2 = [60,70,80];
+let arr3 = [...arr1,...arr2]
