@@ -8,7 +8,7 @@ name : name,
 document.write(studentName.name);
 
 // shorter way .
-// this way is only works of your property name and your key name both are same.
+// this way is only works if your property name and your variable name both are same.
 let name = "Muhammad Shakir";
 let studentName ={
 name,
