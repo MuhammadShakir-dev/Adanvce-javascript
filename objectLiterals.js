@@ -75,6 +75,15 @@ let stdName = {
 };
 console.log(stdName.show());
 
+// for giving function name some spacing.
+let stdName = {
+    name : "Muhammad Shakir",
+    'show Details'(){
+        return this.name;
+    }
+}
+console.log(stdName['show Details']());
+
 
 
 
