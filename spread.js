@@ -9,7 +9,21 @@
 // you can concate arrays and objects using spread operators.
 
 // lets strart practice   
+// example no 1 in which we use both rest and spread function.
+const sum = (name, ...arrg) => {
+    let sum = 0;
+    for(let i in arrg){
+        sum += arrg[i];
+    }
+    document.write(`${name} total marks: ${sum}`)
+}
 
+let arr = [90,95,93,95,95];
+let arr1 = [89,99,87,95,90]
+sum("Muhammad Shakir",...arr);
+sum("Anum Mustafa",...arr1);
 
-
+//example no 2 the spread operator covert the array into multiple singel values
+let arr = [10,20,30,40];
+document.write(...arr)
 
