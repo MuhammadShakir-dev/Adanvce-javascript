@@ -43,6 +43,36 @@ let arr3 = arr1.concat(arr2);
 
 //exapmle no 5
 //using spread operators.
+// keep in mind one thing the order of concatenation depends upon which array your write frist.
 let arr1 = [10,20,30,40,50];
 let arr2 = [60,70,80];
 let arr3 = [...arr1,...arr2]
+
+
+//example no 6
+// now using push method using spread operator.
+// push adds an element or a value to the end of an array.
+// pop adds and element or a value to the begening of an array.
+let arr1 = [10,20,30,40,50,60];
+let arr2 = [70,80,90,100];
+let arr3 = [5,...arr1,...arr2,105];
+//output
+(12) [5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 105]
+
+//example no 7
+// now using spread operator to concate objects .
+ var obj1 = {
+    name : "Muhammad Shakir",
+    rank : "Co-lead",
+};
+    var obj2 = {
+        age: 21,
+        community : "Google Developer Student Clubs",
+    };
+         var obj3 = {...obj1,...obj2};
+
+//output
+{name: 'Muhammad Shakir', rank: 'Co-lead', age: 21, community: 'Google Developer Student Clubs'}
+
+
+
