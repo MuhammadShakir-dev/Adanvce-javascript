@@ -19,3 +19,13 @@ console.log(depart);
 console.log(uni);
 console.log(gender);
 console.log(salary);
+
+//lets use rest operaror in destructuring arrays
+
+let user = ["Muhammad Shakir","Paysense","Applied"];
+let [name, ...arrgs] = user;
+console.log(name);
+console.log(arrgs);
+//output;
+Muhammad Shakir
+(2) ['Paysense', 'Applied']
