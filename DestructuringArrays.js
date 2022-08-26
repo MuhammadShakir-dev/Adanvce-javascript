@@ -29,3 +29,27 @@ console.log(arrgs);
 //output;
 Muhammad Shakir
 (2) ['Paysense', 'Applied']
+
+// using destructring arrays inside of a function.
+
+const user1 = ([name,age,course]) => {
+    console.log(name);
+    console.log(age);
+    console.log(course);
+   
+   };
+user1(["Muhammad Shakir",21,"BS-SE"]);
+//output.
+Muhammad Shakir
+21
+BS-SE
+//let's take another exapmle.
+
+const user1 = () => {
+return ["Muhammad Shakir",21,"BS-SE"]
+   };
+let[name,age,course] = user1();
+
+// ouput.
+user1()
+(3) ['Muhammad Shakir', 21, 'BS-SE']
