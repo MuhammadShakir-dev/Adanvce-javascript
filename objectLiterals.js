@@ -84,6 +84,28 @@ let stdName = {
 }
 console.log(stdName['show Details']());
 
+// creating  a function and then call return an object in it.
+let name;
+let course;
+const std = (name,course) => {
+    return {name,course} 
+};
+// output.
+std("Muhammad Shakir","Software Eng")
+{name: 'Muhammad Shakir', course: 'Software Eng'}course: "Software Eng"name: "Muhammad Shakir"};
+// as you can see that it will return the value in the object form and the paaramtere will become the property .
+
+let fname;
+let lname;
+let course;
+const stdDet = (fname,lname,course) => {
+    let fullname = fname + " " + lname;
+    return {fullname,course};
+};
+// output.
+stdDet("Muhammad","Shakir","BS-SE")
+{fullname: 'Muhammad Shakir', course: 'BS-SE'}
+
 
 
 
